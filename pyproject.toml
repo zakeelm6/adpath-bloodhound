@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adpath-bloodhound"
+version = "0.1.0"
+description = "Offline BloodHound triage: credential quick-wins, attack paths and an interactive AD kill-chain report in a single HTML file."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Zakariya Elmansouri" }]
+keywords = ["active-directory", "bloodhound", "pentesting", "red-team", "kerberos", "dcsync", "security-tools"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Environment :: Console",
+]
+dependencies = []
+
+[project.optional-dependencies]
+collect = ["bloodhound"]
+
+[project.urls]
+Homepage = "https://github.com/zakeelm6/adpath-bloodhound"
+Repository = "https://github.com/zakeelm6/adpath-bloodhound"
+
+[project.scripts]
+adpath = "adpath:main"
+
+[tool.setuptools]
+py-modules = ["adpath"]

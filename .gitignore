@@ -1,0 +1,21 @@
+# Sorties de l'outil (peuvent contenir des données d'environnement réelles)
+adpath_*/
+*_bloodhound.zip
+*_users.json
+*_groups.json
+*_computers.json
+*_domains.json
+*_gpos.json
+*_ous.json
+*_containers.json
+report*.html
+results*.json
+path*.md
+users.txt
+asrep.hash
+kerb.hash
+
+# Python
+__pycache__/
+*.pyc
+.venv/
